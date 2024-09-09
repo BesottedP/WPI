@@ -1,0 +1,61 @@
+pseudocode
+
+In main:
+
+    Prompt the user for a seed
+    Get the value from the terminal and store it to the variable (seed)
+    Set the seed to (seed)
+
+    Initialize variables
+
+    While the greatest animal position is less than 70
+
+        increment the time for each iteration
+        update the position for eahc animal
+        For each animal, check if its position is the greatest, if so
+            Set the current leader to be that animal
+            If the current leader was a different animal
+                print "At time [time], the [animal] (square [position]) has taken the lead' to the terminal
+    
+    After the loop is done iterating, do a switch case for the final winner
+    print "After [time] seconds, the [animal] wins!!" to the terminal
+
+int update_hare(int current_position):
+    Generate a random float between 0 and 1
+    If the float is between 0 and 0.25
+        current_position is unchanged
+    If the float is between 0.25 and 0.45
+        add 9 to current_position
+    If the float is between 0.45 and 0.55
+        subtract 10 from current_position
+    If the float is between 0.55 and 0.8
+        add 2 to the current_position
+    If the float is between 0.8 and 1
+        subtract 2 from the current_position
+
+    If current_position is negative, change it to 0
+    Return current_position
+
+int update_tortoise(int current_position):
+    Generate a random float between 0 and 1
+    If the float is between 0 and 0.45
+        add 3 to current_position
+    If the float is between 0.45 and 0.65
+        subtract 5 from current_position
+    If the float is between 0.65 and 1
+        add 1 to the current_position
+
+    If current_position is negative, change it to 0
+    Return current_position
+
+int update_bee(int current_position):
+    Generate a random float between 0 and 1
+    If the float is between 0 and 0.3
+        add 2 to current_position
+    If the float is between 0.3 and 0.5
+        add 1 to current_position
+    If the float is between 0.5 and 1
+        current_position is unchanged
+
+    If current_position is negative, change it to 0
+    Return current_position

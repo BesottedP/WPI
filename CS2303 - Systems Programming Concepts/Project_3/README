@@ -1,0 +1,19 @@
+rational_math.c
+Ishaan Patel
+02/12/2024
+
+This program reads each line in file(s), performs the operation/boolean statement in each line, and prints the answers in an output file.
+
+To compile the program, run the command: 
+    gcc -g -Wall test_rational.o rational.o -lm -o rational_math
+
+To run the program with one file, run the command:
+    ./rational_math input1.txt output.txt
+
+To run the program with multiple files, run the command:
+    ./rational_math input1.txt input2.txt etc... output.txt
+
+Sources:
+    https://en.wikipedia.org/wiki/Least_common_multiple
+    https://en.wikipedia.org/wiki/Greatest_common_divisor
+

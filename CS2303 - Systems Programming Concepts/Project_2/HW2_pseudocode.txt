@@ -1,0 +1,60 @@
+pseudocode
+
+In main:
+
+    Create a file object for each data file
+    Create an array of all file objects
+    Create a 50 row, 12 column array of intergers to hold all sales data
+
+    Loop through each file, scan, and add the data to the 2D array,
+    with each row assigned to an item, and each column assigned to a month
+
+    Ask the user which program they would like to run, and store
+    the result in a variable
+
+    Use a switch-case system:
+        Case 1:
+            Call the print_item function
+        Case 2:
+            Call the total_sales function
+        Case 3:
+            Call the top_overall function
+        Default case:
+            Print "error"
+
+In print_item:
+
+    Prompt the user for which item they want to print_item,
+    and store the answer in a variable
+
+    Loop through each month, and retrieve the result at
+    [month][requested_item]
+    Print the value
+
+In total_sales:
+
+    Create a file object for sales.txt
+
+    Loop through each item
+        Set a variable to store the sales of the item
+        Loop through each month
+            Add the value from the month to the variable
+        
+        Print the item number, a tab, the sum of the sales, then a new line
+        to the sales.txt file
+
+In top_overall:
+
+    Create 2 variables, one to store the item number of the most popular item,
+    and another to store the sales of that item
+
+    Loop through each item
+        Set a variable to store the sales of the item
+            Loop through each month
+                Add the value from the month to the variable
+        
+        If the total sales is greater than the value stored for the greatest sales
+            Set the greatest sales variable to the current sales value
+            Set the most popular item variable to the respective item
+
+    Print out the most popular item
